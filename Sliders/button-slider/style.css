@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #dfdada;
+}
+
+h2{
+    text-align: center;
+    margin: 10px auto 0px;
+}
+
+main{
+    width: 60%;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 10px;
+}
+ul,li{
+    list-style: none;
+}
+.img-slider img{
+    width: 100%; 
+}
+/* LE DAMOS POSICION RELATIV AL CONTENEDOR PADRE */
+.container-img-slider{
+    position: relative;
+    height: 470px;
+}
+/* LE DAMOS POSICION ABSOLUTA A LOS li PARA QUE SE APILEN ENTRE ELLOS, Y UN OPACITY:0 PARA QUE DESAPAREZCAN */
+.img-slider li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+/* EL SLIDER 1 SERA EL UNICO VISIBLE */
+#slide1{
+    opacity: 1;
+}
+/* CUANDO UN ENLACE QUE APUNTE A LA ID DEL SLIDE SE CLICKE, PONEMOS LA OPACIDAD DE 1 A ESE SLIDER */
+.img-slider li:target{
+    opacity: 1;
+}
+
+.btn-slider{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.btn-slider a{
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    padding: 10px 13px;
+    background-color: gray;
+    border-radius: 50%;
+    color: #fff;
+}
+.btn-slider a:hover{
+    background-color: darkgrey;
+}
