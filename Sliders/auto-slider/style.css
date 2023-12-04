@@ -40,3 +40,9 @@ h2{
     75% {margin-left: -300%;}
     95% {margin-left: -300%;}
 }
+
+.recurso{
+    padding: 10px;
+    background-color: black;
+    color: white;
+}

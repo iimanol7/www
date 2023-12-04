@@ -37,6 +37,7 @@ ul,li{
     top: 0;
     left: 0;
     opacity: 0;
+    transition: .5s ease;
 }
 /* EL SLIDER 1 SERA EL UNICO VISIBLE */
 #slide1{
@@ -63,4 +64,11 @@ ul,li{
 }
 .btn-slider a:hover{
     background-color: darkgrey;
+}
+
+.recurso{
+    background-color: black;
+    padding: 10px;
+    align-items: center;
+    color: white;
 }
