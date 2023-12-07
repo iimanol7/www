@@ -26,10 +26,12 @@ ul,li{
 .img-slider img{
     width: 100%; 
 }
-/* LE DAMOS POSICION RELATIV AL CONTENEDOR PADRE */
 .container-img-slider{
-    position: relative;
     height: 470px;
+}
+/* LE DAMOS POSICION RELATIV AL CONTENEDOR PADRE (ul)*/
+.img-slider{
+    position: relative;
 }
 /* LE DAMOS POSICION ABSOLUTA A LOS li PARA QUE SE APILEN ENTRE ELLOS, Y UN OPACITY:0 PARA QUE DESAPAREZCAN */
 .img-slider li{
