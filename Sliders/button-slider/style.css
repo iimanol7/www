@@ -42,9 +42,14 @@ ul,li{
     transition: .5s ease;
 }
 /* EL SLIDER 1 SERA EL UNICO VISIBLE */
-#slide1{
+
+.img-slider li:first-child{
     opacity: 1;
 }
+
+/* #slide1{
+    opacity: 1;
+} */
 /* CUANDO UN ENLACE QUE APUNTE A LA ID DEL SLIDE SE CLICKE, PONEMOS LA OPACIDAD DE 1 A ESE SLIDER */
 .img-slider li:target{
     opacity: 1;
